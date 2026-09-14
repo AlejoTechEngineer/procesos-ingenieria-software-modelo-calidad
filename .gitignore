@@ -1,0 +1,23 @@
+# ==== Archivos editables: permanecen SOLO en local, NO se suben ====
+*.docx
+*.doc
+*.dotx
+*.odt
+*.rtf
+*.xlsx
+*.xls
+*.pptx
+*.ppt
+
+# Temporales de Office
+~$*
+*.tmp
+
+# Carpeta/material de la actividad (solo local)
+actividad/
+Actividad/
+/actividad*/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
