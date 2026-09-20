@@ -2,7 +2,7 @@
 
 # 🧩 Modelo de Calidad de Software basado en ISO/IEC 25010
 
-### *Aplicado al Comercio Electrónico: Seguridad, Eficiencia, Fiabilidad y Accesibilidad*
+### *Aplicado al Comercio Electrónico: Seguridad, Eficiencia, Fiabilidad, Usabilidad y Accesibilidad*
 
 **Asignatura: Procesos en Ingeniería del Software · Actividad de Laboratorio: Diseño y Desarrollo de un Modelo de Calidad**
 
@@ -51,11 +51,11 @@ El trabajo diseña un **modelo de calidad de software** fundamentado en la famil
 
 > **Estándar:** ISO/IEC 25010 (modelo de calidad del producto), sobre la base de ISO/IEC 25000 (SQuaRE).
 > **Dominio:** comercio electrónico.
-> **Alcance:** cuatro factores de calidad — Seguridad, Eficiencia de desempeño, Fiabilidad y Accesibilidad — con métricas ISO/IEC 25023 y medición real de accesibilidad.
+> **Alcance:** cinco factores de calidad — Seguridad, Eficiencia de desempeño, Fiabilidad, Usabilidad y Accesibilidad — con métricas ISO/IEC 25023 y medición real de accesibilidad.
 
 ### 🌟 ¿Qué aporta este documento?
 
-- 🎯 **Modelo de calidad acotado** a cuatro factores clave del comercio electrónico: Seguridad, Eficiencia de desempeño, Fiabilidad y Accesibilidad.
+- 🎯 **Modelo de calidad acotado** a cinco factores clave del comercio electrónico: Seguridad, Eficiencia de desempeño, Fiabilidad, Usabilidad y Accesibilidad.
 - 🧾 **Desarrollo de subcaracterísticas y métricas** por factor, siguiendo ISO/IEC 25023.
 - ♿ **Medición real de accesibilidad** con WCAG 2.1 sobre la página de inicio de Falabella Colombia.
 - 📊 **Interpretación de resultados** y recomendaciones de mejora derivadas de la medición.
@@ -66,7 +66,7 @@ El trabajo diseña un **modelo de calidad de software** fundamentado en la famil
 
 <table align="center">
   <tr><th>Elemento</th><th>Descripción</th></tr>
-  <tr><td><code>Desarrollo_Proyecto_Alejandro_De_Mendoza_Tovar.pdf</code></td><td>📘 Documento final: análisis del dominio, marco ISO/IEC 25010, desarrollo de los cuatro factores de calidad con sus métricas, y medición del factor de accesibilidad con su interpretación</td></tr>
+  <tr><td><code>Desarrollo_Proyecto_Alejandro_De_Mendoza_Tovar.pdf</code></td><td>📘 Documento final: análisis del dominio, marco ISO/IEC 25010, desarrollo de los cinco factores de calidad con sus métricas, y medición del factor de accesibilidad con su interpretación</td></tr>
   <tr><td><code>README.md</code></td><td>📄 Este documento</td></tr>
   <tr><td><code>LICENSE</code></td><td>⚖️ Licencia MIT</td></tr>
   <tr><td><code>.gitignore</code></td><td>🚫 Mantiene en local los documentos editables (<code>.docx</code>, <code>.doc</code>), la carpeta de la actividad y los archivos temporales de Office</td></tr>
@@ -109,7 +109,8 @@ flowchart TD
     C --> C1[3.1 Seguridad]
     C --> C2[3.2 Eficiencia de desempeno]
     C --> C3[3.3 Fiabilidad]
-    C --> C4[3.4 Accesibilidad]
+    C --> C4[3.4 Usabilidad]
+    C --> C5[3.5 Accesibilidad]
     C --> D[4. Metricas por factor - ISO-IEC 25023]
     D --> E[5. Medicion del factor de accesibilidad - WCAG 2.1]
     E --> F[6. Interpretacion y recomendaciones]
@@ -128,8 +129,9 @@ flowchart LR
     C --> D[Seguridad]
     C --> E[Eficiencia de desempeno]
     C --> F[Fiabilidad]
+    C --> U[Usabilidad]
     C --> G[Accesibilidad]
-    D & E & F & G --> H[Subcaracteristicas y Metricas - ISO-IEC 25023]
+    D & E & F & U & G --> H[Subcaracteristicas y Metricas - ISO-IEC 25023]
     G --> I[Medicion WCAG 2.1 - WAVE sobre Falabella Colombia]
     I --> J[Interpretacion y Recomendaciones de Mejora]
 ```
@@ -143,6 +145,7 @@ flowchart LR
 | **Seguridad** | Confidencialidad, integridad, no repudio, autenticidad y responsabilidad |
 | **Eficiencia de desempeño** | Comportamiento temporal, utilización de recursos y capacidad |
 | **Fiabilidad** | Madurez, disponibilidad, tolerancia a fallos y recuperabilidad |
+| **Usabilidad** | Reconocibilidad de la adecuación, aprendizabilidad, operabilidad, protección contra errores de usuario y estética de la interfaz |
 | **Accesibilidad** | Principios WCAG 2.1: perceptible, operable, comprensible y robusto |
 
 ---
@@ -161,7 +164,7 @@ La evaluación del factor de accesibilidad se realizó sobre la página de inici
 | Elemento | Aplicación |
 |:---|:---|
 | **ISO/IEC 25000 (SQuaRE)** | Marco general de la familia de normas de calidad |
-| **ISO/IEC 25010** | Selección y definición de los cuatro factores de calidad |
+| **ISO/IEC 25010** | Selección y definición de los cinco factores de calidad |
 | **ISO/IEC 25023** | Subcaracterísticas y métricas asociadas a cada factor |
 | **WCAG 2.1** | Referencia normativa para la evaluación de accesibilidad |
 | **WAVE (WebAIM)** | Medición automatizada sobre el sitio real evaluado |
@@ -190,7 +193,8 @@ La evaluación del factor de accesibilidad se realizó sobre la página de inici
 | Factor: Seguridad | 3.1 | ✔ |
 | Factor: Eficiencia de desempeño | 3.2 | ✔ |
 | Factor: Fiabilidad | 3.3 | ✔ |
-| Factor: Accesibilidad | 3.4 | ✔ |
+| Factor: Usabilidad | 3.4 | ✔ |
+| Factor: Accesibilidad | 3.5 | ✔ |
 | Métricas por factor (ISO/IEC 25023) | 4 | ✔ |
 | Medición WCAG 2.1 con WAVE (Falabella Colombia) | 5 | ✔ |
 | Interpretación y recomendaciones de mejora | 6 | ✔ |
